@@ -1,0 +1,18 @@
+<button routerLink="/job-posting" class="btn btn-primary">Create Job Posting</button>
+<hr>
+<table class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Description</th>
+    <th>Deadline</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let job of jobs">
+    <td>{{ job.id }}</td>
+    <td>{{ job.description }}</td>
+    <td>{{ job.deadline }}</td>
+  </tr>
+  </tbody>
+</table>
